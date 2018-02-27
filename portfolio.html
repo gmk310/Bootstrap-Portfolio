@@ -3,42 +3,130 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 </head>
+<style>
+    .navbar-brand {
+        font-family: 'Varela Round', sans-serif;
+
+    }
+
+    div.gallery {
+        margin: 5px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 180px;
+    }
+
+    div.gallery:hover {
+        border: 1px solid #777;
+    }
+
+    div.gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+    div.desc {
+        padding: 15px;
+        text-align: center;
+    }
+</style>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Gina Kozar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home
-                        <span class="sr-only">(current)</span>
-                    </a>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Gina Kozar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-
-
+                    <a class="nav-link" href="#">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
                 </li>
             </ul>
+        </nav>
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="page-header">
+                    <h2>Portfolio</h2>
+                    <hr/>
+
+                </div>
+            </div>
+            <div class="text-center col-sm-4 border border-dark">
+                <h4> Connect With Me</h4>
+                <hr>
+                <img src="assets/Images/linkedin.png" alt="Linkedin" class="img-fluid" style="width:20%">
+                <img src="assets/Images/github.jpg" alt="Github" class="img-fluid" style="width:20%">
+                <img src="assets/Images/stackoverflow.png" alt="Stack" class="img-fluid" style="width:20%">
+            </div>
 
         </div>
-    </nav>
+
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="https://indianapublicmedia.org/eartheats/files/2010/10/Candy.jpg">
+            <img src="https://indianapublicmedia.org/eartheats/files/2010/10/Candy.jpg" alt="Trolltunga Norway" width="300" height="200">
+        </a>
+        <div class="desc">Candy</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="https://www.trustedclothes.com/blog/wp-content/uploads/2016/11/Natural-or-Synthetic-Fabrics-in-clothing.jpg">
+            <img src="https://www.trustedclothes.com/blog/wp-content/uploads/2016/11/Natural-or-Synthetic-Fabrics-in-clothing.jpg" alt="Forest"
+                width="600" height="400">
+        </a>
+        <div class="desc">Clothes</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="https://parade.com/wp-content/uploads/2014/08/otter-1.jpg">
+            <img src="https://parade.com/wp-content/uploads/2014/08/otter-1.jpg" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">Otters</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="https://media-cdn.tripadvisor.com/media/photo-o/0e/01/3c/a6/highreslong-bay-beach.jpg">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-o/0e/01/3c/a6/highreslong-bay-beach.jpg" alt="Mountains" width="600"
+                height="400">
+        </a>
+        <div class="desc">Beaches</div>
+    </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
 
 </body>
 
